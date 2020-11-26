@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30709.132
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spa_sample", "spa_sample\spa_sample.csproj", "{1FE18068-1029-4C8E-80DA-27D64EDAFFFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "spa_sample", "spa_sample\spa_sample.csproj", "{1FE18068-1029-4C8E-80DA-27D64EDAFFFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tweet_sample", "tweet_sample\tweet_sample.csproj", "{3365B631-73C5-46EA-BB70-15399C96B4BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1FE18068-1029-4C8E-80DA-27D64EDAFFFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FE18068-1029-4C8E-80DA-27D64EDAFFFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FE18068-1029-4C8E-80DA-27D64EDAFFFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3365B631-73C5-46EA-BB70-15399C96B4BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3365B631-73C5-46EA-BB70-15399C96B4BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3365B631-73C5-46EA-BB70-15399C96B4BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3365B631-73C5-46EA-BB70-15399C96B4BA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

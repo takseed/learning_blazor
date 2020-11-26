@@ -1,0 +1,19 @@
+﻿@page "/tweet"
+<h1>Tweet</h1>
+<input type="text" @bind="inputText" />
+<button class="btn btn-primary" @onclick="@AddTweet">Tweet</button>
+
+
+@foreach (var tweetValue in this.tweets)
+{
+    <hr \><div> > @tweetValue</div>
+}
+@code {
+    public string inputText;
+    private List<string> tweets = new List<string>();
+    private void AddTweet()
+    {
+        tweets.Add(inputText);
+        inputText = "";
+    }
+}

@@ -6,24 +6,11 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
-@foreach (int i in this.data)
-{
-    <div @key="i">
-        <input type="number" placeholder="値" />
-    </div>
-}
-
-
 @code {
-
-
     private int currentCount = 0;
-
-    private List<int> data = new List<int>();
 
     private void IncrementCount()
     {
-        data.Add(currentCount);
         currentCount++;
     }
 }

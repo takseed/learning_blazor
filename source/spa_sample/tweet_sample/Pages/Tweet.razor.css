@@ -1,0 +1,23 @@
+﻿body {
+}
+
+.fade_in {
+    background-color: red;
+}
+/* CSSアニメーションの指定 */
+.Headline {
+    animation: SlideIn 1.6s;
+}
+
+/* CSSアニメーションの設定 */
+@keyframes SlideIn {
+    0% {
+        opacity: 0; /*初期状態では透明に*/
+        transform: translateX(64px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

@@ -1,0 +1,42 @@
+﻿@page "/tweet"
+@inject TweetContainer tc
+<h1>Tweet</h1>
+<input type="text" @bind="inputText" />
+<button class="btn btn-primary" @onclick="@AddTweet">Tweet</button>
+@foreach (var tweetValue in tc.Tweets)
+{
+    <hr \>
+    <div class="Headline">> @tweetValue.Content </div>
+}
+@code {
+    public string inputText;
+    private void AddTweet()
+    {
+        //tweets.Add(new TweetValue { Id = counter++, Content = inputText });
+        //tweets.Insert(0, new TweetValue { Id = counter++, Content = inputText });
+        tc.AddTweet(inputText);
+        inputText = "";
+    }
+}
+
+<!--
+    private int counter = 0;
+    private List<TweetValue> tweets = new List<TweetValue>();
+    class TweetValue
+    {
+        public int Id { get; set; }
+        public string Content { get; set; }
+    }
+
+
+@foreach (var tweetValue in this.tweets)
+{
+    <hr \>
+    <div @key="tweetValue.Id">
+        <h1 class="Headline"> > @tweetValue.Content</h1>
+
+    </div>
+}
+
+Inject
+-->
